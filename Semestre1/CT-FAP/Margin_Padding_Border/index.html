@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Box Model</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      width: 300px;
+      background-color: white;
+
+      margin: 40px auto; /* centraliza + espaço externo */
+      padding: 20px;     /* espaço interno */
+      border: 1px solid #ccc;
+
+      border-radius: 10px;
+    }
+
+    .titulo {
+      margin-bottom: 10px;
+    }
+
+    .texto {
+      margin-bottom: 20px;
+    }
+
+    .botao {
+      display: inline-block;
+      background-color: royalblue;
+      color: white;
+      text-decoration: none;
+
+      padding: 10px 15px; /* aumenta área clicável */
+      border: 2px solid darkblue;
+
+      border-radius: 5px;
+    }
+
+    .botao:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2 class="titulo">Loren Ipsum</h2>
+
+    <p class="texto">
+      Donec nec mattis dui, quis sagittis magna. Praesent in sollicitudin 
+    </p>
+
+    <a href="#" class="botao">Clique aqui</a>
+  </div>
+
+</body>
+</html>
